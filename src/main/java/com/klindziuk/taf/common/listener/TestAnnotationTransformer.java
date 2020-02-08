@@ -21,7 +21,7 @@ public class TestAnnotationTransformer implements IAnnotationTransformer {
     }
 
     /**
-     * Skips all test methods
+     * Skips all test methods marked with 'SkipOnProduction'
      * @param annotation instance of ITestAnnotation
      * @param testMethod instance of Method
      */

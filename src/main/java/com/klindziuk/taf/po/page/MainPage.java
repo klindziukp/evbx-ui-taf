@@ -30,5 +30,4 @@ public class MainPage extends BasePage {
         DriverManager.getDriver().navigate().to(ConfigStorage.getConfig().getAppUrl());
         acceptButton().waitForVisible().click();
     }
-
 }

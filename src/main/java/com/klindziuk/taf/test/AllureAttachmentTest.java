@@ -30,9 +30,6 @@ public class AllureAttachmentTest extends BaseTest {
         Info.verify("Verify that 'Home page' is opened");
         Assert.assertTrue(mainPage.isPageOpened(TimeConstant.SECONDS_5), "'Home page' is not opened.");
 
-        Info.step("'Scroll to footer'");
-        mainPage.loadFooter();
-
         Info.verify("Fail test to verify attachments");
         Assert.fail("Fail test script to verify Allure attachments.");
     }

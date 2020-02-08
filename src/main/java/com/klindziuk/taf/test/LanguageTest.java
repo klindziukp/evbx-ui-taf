@@ -49,6 +49,4 @@ public class LanguageTest extends BaseTest {
         Info.verify("Verify that 'Home page' is opened");
         Assert.assertTrue(mainPage.isPageOpened(TimeConstant.SECONDS_5), "'Home page' is not opened.");
     }
-
-
 }
