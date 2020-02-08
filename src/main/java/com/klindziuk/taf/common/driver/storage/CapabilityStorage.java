@@ -1,4 +1,4 @@
-package com.klindziuk.taf.common.driver.option;
+package com.klindziuk.taf.common.driver.storage;
 
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
