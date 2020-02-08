@@ -29,6 +29,11 @@ HELP.md
 ### Project ###
 .allure
 .allure-results
+.allure-report
 .target
 src/main/resources/driver
 *.log
+/Users/pavelklindziuk/IdeaProjects/ev-ui-taf/src
+### Maven artifacts
+**/target
+**/generated-sources
