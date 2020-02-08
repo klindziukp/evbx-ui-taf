@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="114.338" tests="5" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.202-b08"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/pavelklindziuk/IdeaProjects/ev-ui-taf"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="BY"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/pavelklindziuk/IdeaProjects/ev-ui-taf"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/7m/dp101jfs6td6nhpb5_clfdnr0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/pavelklindziuk/Tools/apache-maven-3.6.0/bin/m2.conf"/>
+    <property name="profileName" value="local"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/pavelklindziuk/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="browserName" value="chrome"/>
+    <property name="maven.conf" value="/Users/pavelklindziuk/Tools/apache-maven-3.6.0/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.14.3"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="library.jansi.path" value="/Users/pavelklindziuk/Tools/apache-maven-3.6.0/lib/jansi-native"/>
+    <property name="user.home" value="/Users/pavelklindziuk"/>
+    <property name="user.timezone" value="Europe/Minsk"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="pavelklindziuk"/>
+    <property name="java.class.path" value="/Users/pavelklindziuk/Tools/apache-maven-3.6.0/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test allure:report -DprofileName=local -DbrowserName=chrome"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="java.ext.dirs" value="/Users/pavelklindziuk/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/pavelklindziuk/Tools/apache-maven-3.6.0"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="footerTest" classname="com.klindziuk.taf.test.FooterTest" time="22.68"/>
+  <testcase name="contactUsTest" classname="com.klindziuk.taf.test.ContactUsTest" time="19.819">
+    <failure message="&apos;Thanks a million&apos; page is not opened. did not expect to find [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: 'Thanks a million' page is not opened. did not expect to find [true] but found [false]
+	at com.klindziuk.taf.test.ContactUsTest.contactUsTest(ContactUsTest.java:64)
+</failure>
+    <system-out><![CDATA[&amp#27;[0;33m[2020-02-08 16:07:28.222]&amp#27;[m &amp#27;[32m[INFO]&amp#27;[m &amp#27;[0;36m[TestNG-test=Smoke Test Suite-1]&amp#27;[m - &amp#27;[0;35mInstantiating webDriver with hashcode: 82852892
+&amp#27;[m&amp#27;[0;33m[2020-02-08 16:07:33.229]&amp#27;[m &amp#27;[32m[INFO]&amp#27;[m &amp#27;[0;36m[TestNG-test=Smoke Test Suite-1]&amp#27;[m - &amp#27;[0;35mStep: Open Home page -->
+&amp#27;[m&amp#27;[0;33m[2020-02-08 16:07:36.686]&amp#27;[m &amp#27;[32m[INFO]&amp#27;[m &amp#27;[0;36m[TestNG-test=Smoke Test Suite-1]&amp#27;[m - &amp#27;[0;35mVerification: Verify that 'Home page' is opened...
+&amp#27;[m&amp#27;[0;33m[2020-02-08 16:07:36.733]&amp#27;[m &amp#27;[32m[INFO]&amp#27;[m &amp#27;[0;36m[TestNG-test=Smoke Test Suite-1]&amp#27;[m - &amp#27;[0;35mStep: Load 'Contact us' page -->
+&amp#27;[m&amp#27;[0;33m[2020-02-08 16:07:37.758]&amp#27;[m &amp#27;[32m[INFO]&amp#27;[m &amp#27;[0;36m[TestNG-test=Smoke Test Suite-1]&amp#27;[m - &amp#27;[0;35mVerification: Verify that 'Contact us' page is opened...
+&amp#27;[m&amp#27;[0;33m[2020-02-08 16:07:37.795]&amp#27;[m &amp#27;[32m[INFO]&amp#27;[m &amp#27;[0;36m[TestNG-test=Smoke Test Suite-1]&amp#27;[m - &amp#27;[0;35mStep: Load 'Support' page -->
+&amp#27;[m&amp#27;[0;33m[2020-02-08 16:07:40.131]&amp#27;[m &amp#27;[32m[INFO]&amp#27;[m &amp#27;[0;36m[TestNG-test=Smoke Test Suite-1]&amp#27;[m - &amp#27;[0;35mVerification: Verify that 'Support' page is opened...
+&amp#27;[m&amp#27;[0;33m[2020-02-08 16:07:40.220]&amp#27;[m &amp#27;[32m[INFO]&amp#27;[m &amp#27;[0;36m[TestNG-test=Smoke Test Suite-1]&amp#27;[m - &amp#27;[0;35mStep: Send 'Help' message -->
+&amp#27;[m&amp#27;[0;33m[2020-02-08 16:07:42.393]&amp#27;[m &amp#27;[32m[INFO]&amp#27;[m &amp#27;[0;36m[TestNG-test=Smoke Test Suite-1]&amp#27;[m - &amp#27;[0;35mVerification: Verify that 'Thanks a million' page is opened...
+&amp#27;[m&amp#27;[0;33m[2020-02-08 16:07:47.529]&amp#27;[m &amp#27;[32m[INFO]&amp#27;[m &amp#27;[0;36m[TestNG-test=Smoke Test Suite-1]&amp#27;[m - &amp#27;[0;35m=========FAILURE============
+&amp#27;[m&amp#27;[0;33m[2020-02-08 16:07:47.529]&amp#27;[m &amp#27;[32m[INFO]&amp#27;[m &amp#27;[0;36m[TestNG-test=Smoke Test Suite-1]&amp#27;[m - &amp#27;[0;35mcontactUsTest()
+&amp#27;[m&amp#27;[0;33m[2020-02-08 16:07:47.529]&amp#27;[m &amp#27;[32m[INFO]&amp#27;[m &amp#27;[0;36m[TestNG-test=Smoke Test Suite-1]&amp#27;[m - &amp#27;[0;35m============================
+&amp#27;[m&amp#27;[0;33m[2020-02-08 16:07:47.928]&amp#27;[m &amp#27;[32m[INFO]&amp#27;[m &amp#27;[0;36m[TestNG-test=Smoke Test Suite-1]&amp#27;[m - &amp#27;[0;35mTerminating webDriver with hashcode: 82852892
+&amp#27;[m]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 28182
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Feb 08, 2020 4:07:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="loginTest" classname="com.klindziuk.taf.test.LoginTest" time="7.43"/>
+  <testcase name="verifyAttachmentTest" classname="com.klindziuk.taf.test.AllureAttachmentTest" time="8.169">
+    <failure message="Fail test script to verify Allure attachments." type="java.lang.AssertionError">java.lang.AssertionError: Fail test script to verify Allure attachments.
+	at com.klindziuk.taf.test.AllureAttachmentTest.verifyAttachmentTest(AllureAttachmentTest.java:37)
+</failure>
+    <system-out><![CDATA[&amp#27;[0;33m[2020-02-08 16:07:56.813]&amp#27;[m &amp#27;[32m[INFO]&amp#27;[m &amp#27;[0;36m[TestNG-test=Smoke Test Suite-1]&amp#27;[m - &amp#27;[0;35mInstantiating webDriver with hashcode: 1300066040
+&amp#27;[m&amp#27;[0;33m[2020-02-08 16:08:01.818]&amp#27;[m &amp#27;[32m[INFO]&amp#27;[m &amp#27;[0;36m[TestNG-test=Smoke Test Suite-1]&amp#27;[m - &amp#27;[0;35mStep: Open Home page -->
+&amp#27;[m&amp#27;[0;33m[2020-02-08 16:08:04.215]&amp#27;[m &amp#27;[32m[INFO]&amp#27;[m &amp#27;[0;36m[TestNG-test=Smoke Test Suite-1]&amp#27;[m - &amp#27;[0;35mVerification: Verify that 'Home page' is opened...
+&amp#27;[m&amp#27;[0;33m[2020-02-08 16:08:04.252]&amp#27;[m &amp#27;[32m[INFO]&amp#27;[m &amp#27;[0;36m[TestNG-test=Smoke Test Suite-1]&amp#27;[m - &amp#27;[0;35mStep: 'Scroll to footer' -->
+&amp#27;[m&amp#27;[0;33m[2020-02-08 16:08:04.257]&amp#27;[m &amp#27;[32m[INFO]&amp#27;[m &amp#27;[0;36m[TestNG-test=Smoke Test Suite-1]&amp#27;[m - &amp#27;[0;35mVerification: Fail test to verify attachments...
+&amp#27;[m&amp#27;[0;33m[2020-02-08 16:08:04.257]&amp#27;[m &amp#27;[32m[INFO]&amp#27;[m &amp#27;[0;36m[TestNG-test=Smoke Test Suite-1]&amp#27;[m - &amp#27;[0;35m=========FAILURE============
+&amp#27;[m&amp#27;[0;33m[2020-02-08 16:08:04.257]&amp#27;[m &amp#27;[32m[INFO]&amp#27;[m &amp#27;[0;36m[TestNG-test=Smoke Test Suite-1]&amp#27;[m - &amp#27;[0;35mverifyAttachmentTest()
+&amp#27;[m&amp#27;[0;33m[2020-02-08 16:08:04.257]&amp#27;[m &amp#27;[32m[INFO]&amp#27;[m &amp#27;[0;36m[TestNG-test=Smoke Test Suite-1]&amp#27;[m - &amp#27;[0;35m============================
+&amp#27;[m&amp#27;[0;33m[2020-02-08 16:08:04.888]&amp#27;[m &amp#27;[32m[INFO]&amp#27;[m &amp#27;[0;36m[TestNG-test=Smoke Test Suite-1]&amp#27;[m - &amp#27;[0;35mTerminating webDriver with hashcode: 1300066040
+&amp#27;[m]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 2265
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Feb 08, 2020 4:07:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="languageSwitchTest" classname="com.klindziuk.taf.test.LanguageTest" time="9.977"/>
+</testsuite>

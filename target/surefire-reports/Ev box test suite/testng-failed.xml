@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Ev box test suite]" parallel="methods">
+  <listeners>
+    <listener class-name="com.klindziuk.taf.common.listener.SuiteListener"/>
+    <listener class-name="com.klindziuk.taf.common.listener.TestListener"/>
+    <listener class-name="com.klindziuk.taf.common.listener.AlterSuiteListener"/>
+    <listener class-name="com.klindziuk.taf.common.listener.TestAnnotationTransformer"/>
+  </listeners>
+  <test thread-count="1" verbose="0" name="Smoke Test Suite(failed)" parallel="methods">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.klindziuk.taf.test.AllureAttachmentTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyAttachmentTest"/>
+        </methods>
+      </class> <!-- com.klindziuk.taf.test.AllureAttachmentTest -->
+      <class name="com.klindziuk.taf.test.ContactUsTest">
+        <methods>
+          <include name="contactUsTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.klindziuk.taf.test.ContactUsTest -->
+    </classes>
+  </test> <!-- Smoke Test Suite(failed) -->
+</suite> <!-- Failed suite [Ev box test suite] -->

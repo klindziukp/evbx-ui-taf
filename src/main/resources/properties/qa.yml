@@ -1,0 +1,4 @@
+profile: qa
+appUrl: https://qa-evbox.com/en/
+remoteDriverUrl: http://localhost:4444/wd/hub
+

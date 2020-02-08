@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 114.338 s <<< FAILURE! - in TestSuite
+contactUsTest(com.klindziuk.taf.test.ContactUsTest)  Time elapsed: 19.819 s  <<< FAILURE!
+java.lang.AssertionError: 'Thanks a million' page is not opened. did not expect to find [true] but found [false]
+	at com.klindziuk.taf.test.ContactUsTest.contactUsTest(ContactUsTest.java:64)
+
+verifyAttachmentTest(com.klindziuk.taf.test.AllureAttachmentTest)  Time elapsed: 8.169 s  <<< FAILURE!
+java.lang.AssertionError: Fail test script to verify Allure attachments.
+	at com.klindziuk.taf.test.AllureAttachmentTest.verifyAttachmentTest(AllureAttachmentTest.java:37)
+

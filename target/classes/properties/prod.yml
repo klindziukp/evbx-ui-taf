@@ -1,0 +1,4 @@
+profile: prod
+appUrl: https://evbox.com/en/
+remoteDriverUrl: http://localhost:4444/wd/hub
+

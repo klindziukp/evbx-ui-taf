@@ -1,0 +1,48 @@
+version: 2.0
+
+jobs:
+  build:
+    docker:
+      - image: circleci/openjdk:8-jdk-stretch-browsers
+      - image: selenium/standalone-chrome:3.141.59-zinc
+        environment:
+        MAVEN_OPTS: -Xmx3200m
+
+    working_directory: ~/project
+    steps:
+      - checkout
+      - setup_remote_docker
+
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "pom.xml" }}
+            - v1-dependencies-
+
+      - run:
+          name: Resolve Maven dependencies
+          command: mvn dependency:go-offline
+
+      - run:
+          name: Execute Test scripts
+          command: mvn clean test -DprofileName=prod -DbrowserName=chrome
+          when: always
+
+      - run:
+          name: Generate Allure report
+          command: mvn allure:report
+          when: always
+
+      - store_artifacts:
+          path: target/allure-results
+      - store_artifacts:
+          path: allure-report
+      - save_cache:
+          paths:
+            - ~/.m2
+          key: v1-dependencies-{{ checksum "pom.xml" }}
+
+workflows:
+  version: 2
+  evbx-ui-test:
+    jobs:
+      - build
