@@ -16,12 +16,12 @@ This test automation framework used to develop automated test scripts for: https
 * **Local:**
     * Set up configuration in `/src/main/resources/properties/local.yml`.
     * Run the following command from the `project` directory to build the service:
-` mvn clean test allure:report -DprofileName=local -DbrowserName={chrome/firefox/ie/safari}`
+` mvn clean test -DprofileName=local -DbrowserName={chrome/firefox/ie/safari}`
     * Report generation: navigate to `project/target`, execute command:
 `allure serve`.
 * **Remote:**
     * After merge into 'master' branch test execution started automatically.
-    * Results will be available here: https://circleci.com/gh/klindziukp/ev-ui-taf/tree/master.  [Example](https://circleci.com/gh/klindziukp/ev-ui-taf/3)
+    * Results will be available here: https://circleci.com/gh/klindziukp/ev-ui-taf/tree/master.  [Example](https://circleci.com/gh/klindziukp/ev-ui-taf/3).
     * Allure results will be available here: https://circleci.com/gh/klindziukp/ev-ui-taf/**{buildNumber}**#artifacts/containers/0.  [Example](https://circleci.com/gh/klindziukp/ev-ui-taf/3#artifacts/containers/0).
     * Open `index.htm`
 
