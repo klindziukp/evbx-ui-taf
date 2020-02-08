@@ -1,7 +1,11 @@
 # Test automation framework for Everon 
 
-This test automation framework used to develop automated test scripts for: https://evbox.com/en/ 
+This test automation framework used to develop automated test scripts for: https://evbox.com/en/
+
+[![CircleCI](https://circleci.com/gh/klindziukp/ev-ui-taf.svg?style=svg)](https://circleci.com/gh/klindziukp/ev-ui-taf/tree/master)  
+
 ## Tech
+
 * **TAF**
     * [Maven](https://maven.apache.org/)
     * [TestNG](https://testng.org/doc/)
@@ -25,4 +29,5 @@ This test automation framework used to develop automated test scripts for: https
     * Allure results will be available here: https://circleci.com/gh/klindziukp/ev-ui-taf/**{buildNumber}**#artifacts/containers/0.  [Example](https://circleci.com/gh/klindziukp/ev-ui-taf/3#artifacts/containers/0).
     * Open `index.htm`
 
-`
+
+ 
