@@ -26,7 +26,7 @@ public class TestAnnotationTransformer implements IAnnotationTransformer {
      * @param testMethod instance of Method
      */
     private void skipProductionTest(ITestAnnotation annotation, Method testMethod) {
-        if (ConfigStorage.getConfig().getProfile().equalsIgnoreCase(Env.DEV.getName())) {
+        if (ConfigStorage.getConfig().getProfile().equalsIgnoreCase(Env.PROD.getName())) {
             for (Annotation testAnnotation : testMethod.getAnnotations()) {
                 if (testAnnotation instanceof SkipOnProduction) {
                     annotation.setEnabled(false);
