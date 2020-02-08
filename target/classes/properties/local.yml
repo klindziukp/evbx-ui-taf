@@ -1,8 +1,0 @@
-profile: local
-threadCount: 1
-appUrl: https://evbox.com/en/
-chromePath: /src/main/resources/driver/chrome/chromedriver
-fireFoxPath:
-safariPath:
-iePath:
-
