@@ -5,7 +5,6 @@ This test automation framework used to develop automated test scripts for: https
 [![CircleCI](https://circleci.com/gh/klindziukp/ev-ui-taf.svg?style=svg)](https://circleci.com/gh/klindziukp/ev-ui-taf/tree/master)  
 
 ## Tech
-
 * **TAF**
     * [Maven](https://maven.apache.org/)
     * [TestNG](https://testng.org/doc/)
@@ -19,7 +18,7 @@ This test automation framework used to develop automated test scripts for: https
 ## Usage
 * **Local:**
     * Set up configuration in `/src/main/resources/properties/local.yml`.
-    * Run the following command from the `project` directory to build the service:
+    * Run the following command from the `project` directory to execute test scripts:
 ` mvn clean test -DprofileName=local -DbrowserName={chrome/firefox/ie/safari}`
     * Report generation: navigate to `project/target`, execute command:
 `allure serve`.
