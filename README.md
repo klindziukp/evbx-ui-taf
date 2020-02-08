@@ -12,11 +12,7 @@ This test automation framework used to develop automated test scripts for: https
 * **CI**
     * [Circle CI](https://circleci.com/)
     * [Docker-Selenium](https://github.com/SeleniumHQ/docker-selenium)
-
-  
-    
 ## Usage
-
 * **Local:**
     * Set up configuration in `/src/main/resources/properties/local.yml`.
     * Run the following command from the `project` directory to build the service:
@@ -25,7 +21,7 @@ This test automation framework used to develop automated test scripts for: https
 `allure serve`.
 * **Remote:**
     * After merge into 'master' branch test execution started automatically.
-    * Results will be available here: https://circleci.com/gh/klindziukp/ev-ui-taf/**{buildNumber}**.  [Example](https://circleci.com/gh/klindziukp/ev-ui-taf/3)
+    * Results will be available here: https://circleci.com/gh/klindziukp/ev-ui-taf/tree/master.  [Example](https://circleci.com/gh/klindziukp/ev-ui-taf/3)
     * Allure results will be available here: https://circleci.com/gh/klindziukp/ev-ui-taf/**{buildNumber}**#artifacts/containers/0.  [Example](https://circleci.com/gh/klindziukp/ev-ui-taf/3#artifacts/containers/0).
     * Open `index.htm`
 
