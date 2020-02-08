@@ -15,7 +15,7 @@ This test automation framework used to develop automated test scripts for: https
 ## Usage
 * **Local:**
     * Set up configuration in `/src/main/resources/properties/local.yml`.
-    * Run the following command from the `project` directory to build the service:
+    * Run the following command from the `project` directory to execute test scripts:
 ` mvn clean test -DprofileName=local -DbrowserName={chrome/firefox/ie/safari}`
     * Report generation: navigate to `project/target`, execute command:
 `allure serve`.
