@@ -5,4 +5,9 @@ chromePath: /src/main/resources/driver/chrome/chromedriver
 fireFoxPath:
 safariPath:
 iePath:
+captcha:
+  userKey:
+  googleKey:
+  captchaUrlPattern:
+  tokenUrlPattern:
 

@@ -1,6 +1,6 @@
 package com.klindziuk.taf.common.listener;
 
-import com.klindziuk.taf.common.annotation.SkipOnProduction;
+import com.klindziuk.taf.common.annotation.SkipOnCI;
 import com.klindziuk.taf.common.config.ConfigStorage;
 import com.klindziuk.taf.common.constant.Env;
 import org.testng.IAnnotationTransformer;
@@ -21,14 +21,14 @@ public class TestAnnotationTransformer implements IAnnotationTransformer {
     }
 
     /**
-     * Skips all test methods marked with 'SkipOnProduction'
+     * Skips all test methods marked with 'SkipOnCI'
      * @param annotation instance of ITestAnnotation
      * @param testMethod instance of Method
      */
     private void skipProductionTest(ITestAnnotation annotation, Method testMethod) {
         if (ConfigStorage.getConfig().getProfile().equalsIgnoreCase(Env.PROD.getName())) {
             for (Annotation testAnnotation : testMethod.getAnnotations()) {
-                if (testAnnotation instanceof SkipOnProduction) {
+                if (testAnnotation instanceof SkipOnCI) {
                     annotation.setEnabled(false);
                 }
             }

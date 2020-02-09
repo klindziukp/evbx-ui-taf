@@ -1,5 +1,9 @@
 package com.klindziuk.taf.po.block.form;
 
+import com.klindziuk.taf.common.config.ConfigStorage;
+import com.klindziuk.taf.common.constant.Env;
+import com.klindziuk.taf.common.driver.DriverManager;
+import com.klindziuk.taf.common.service.CaptchaService;
 import com.klindziuk.taf.common.util.JavaScriptUtil;
 import com.klindziuk.taf.po.block.form.field.ContactUsField;
 import com.klindziuk.taf.common.envelope.LocatorType;
@@ -12,7 +16,7 @@ public class ContactUsForm {
 
     // PO ELEMENTS
     private WebEnvelope contactUsItem(ContactUsField contactUsField) {
-        String locator = String.format("//*[@name=\"%s\"]",contactUsField.getName());
+        String locator = String.format("//*[@name=\"%s\"]", contactUsField.getName());
         return new WebEnvelope(LocatorType.XPATH, locator);
     }
 
@@ -26,13 +30,13 @@ public class ContactUsForm {
     }
 
     // PO METHODS
-    public ContactUsForm fillEmail(String email){
+    public ContactUsForm fillEmail(String email) {
         contactUsItem(ContactUsField.EMAIL).waitForVisible().sendText(email);
         scrollDownABit();
         return this;
     }
 
-    public ContactUsForm fillMessage(String message){
+    public ContactUsForm fillMessage(String message) {
         contactUsItem(ContactUsField.MESSAGE).waitForVisible().sendText(message);
         scrollDownABit();
         return this;
@@ -45,7 +49,7 @@ public class ContactUsForm {
         return this;
     }
 
-    public ContactUsForm fillPostalInfo(String postalCode, String city, String country){
+    public ContactUsForm fillPostalInfo(String postalCode, String city, String country) {
         contactUsItem(ContactUsField.POSTAL_CODE).waitForVisible().sendText(postalCode);
         contactUsItem(ContactUsField.CITY).waitForVisible().sendText(city);
         selectCountry(country);
@@ -53,16 +57,29 @@ public class ContactUsForm {
         return this;
     }
 
-    public void submitForm(){
-        sendButton().waitForVisible().click();
+    // Submits form with/without captcha based on profile
+    public void submitForm() {
+        String profile = ConfigStorage.getConfig().getProfile();
+        if (Env.PROD.getName().equals(profile) || Env.LOCAL.getName().equals(profile)) {
+            submitCaptcha();
+        } else {
+            sendButton().waitForVisible().click();
+        }
     }
 
-    private void scrollDownABit(){
-        JavaScriptUtil.scrollPage(0,400);
+    private void scrollDownABit() {
+        JavaScriptUtil.scrollPage(0, 400);
     }
 
     private void selectCountry(String countryName) {
         contactUsItem(ContactUsField.COUNTRY).waitForVisible().click();
         country(countryName).waitForVisible().click();
+    }
+
+    private void submitCaptcha() {
+        CaptchaService captchaService = new CaptchaService(ConfigStorage.getConfig().getCaptcha().getUserKey());
+        String token = captchaService.generateToken(DriverManager.getDriver().getCurrentUrl());
+        JavaScriptUtil.executeCaptchaToken(token);
+        JavaScriptUtil.sendPostForm();
     }
 }

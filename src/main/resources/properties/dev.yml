@@ -1,4 +1,8 @@
 profile: dev
 appUrl: https://dev-evbox.com/en/
 remoteDriverUrl: http://localhost:4444/wd/hub
-
+captcha:
+  userKey:
+  googleKey:
+  captchaUrlPattern:
+  tokenUrlPattern:

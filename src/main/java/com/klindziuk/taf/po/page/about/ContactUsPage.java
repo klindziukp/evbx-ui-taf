@@ -30,24 +30,24 @@ public class ContactUsPage extends BasePage {
     }
 
     // PO Methods
-    public ContactUsForm contactUsForm(){
+    public ContactUsForm contactUsForm() {
         return contactUsForm;
     }
 
     @Override
     public boolean isPageOpened(int seconds) {
-       return title().isVisible(seconds);
+        return title().isVisible(seconds);
     }
 
-    public void openSupportPage(){
+    public void openSupportPage() {
         requestHelpButton().waitForVisible().click();
     }
 
-    public boolean isTitleVisible(){
+    public boolean isTitleVisible() {
         return title().isVisible(TimeConstant.SECONDS_3);
     }
 
-    public boolean isRequestHelpButtonVisible(){
+    public boolean isRequestHelpButtonVisible() {
         return requestHelpButton().isVisible(TimeConstant.SECONDS_3);
     }
 }

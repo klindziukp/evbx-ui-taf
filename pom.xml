@@ -11,6 +11,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <aspectj.version>1.8.10</aspectj.version>
+    <apache-client-version>4.5.10</apache-client-version>
     <allure-testng.version>2.13.1</allure-testng.version>
     <allure-commons.version>2.13.1</allure-commons.version>
     <allure-attachments.version>2.13.1</allure-attachments.version>
@@ -26,6 +27,11 @@
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>${testng.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>${apache-client-version}</version>
     </dependency>
     <dependency>
       <groupId>io.qameta.allure</groupId>

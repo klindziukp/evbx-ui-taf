@@ -28,33 +28,47 @@ public final class JavaScriptUtil {
      * @param y coordinate
      */
     public static void scrollPage(int x, int y) {
-        JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();
-        js.executeScript(String.format("window.scrollBy(%d,%d)", x, y));
+        executeJsCommand(String.format("window.scrollBy(%d,%d)", x, y));
     }
 
     /**
      * Refreshes a page
      */
     public static void refresh() {
-        JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();
-        js.executeScript("history.go(0)");
+        executeJsCommand("history.go(0)");
     }
 
     /**
      * Scrolls to bottom
-     *
      */
     public static void scrollToBottom() {
-        JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();
-        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+        executeJsCommand("window.scrollTo(0, document.body.scrollHeight)");
     }
 
     /**
      * Scrolls to top
-     *
      */
     public static void scrollToTop() {
+        executeJsCommand("window.scrollTo(0, 0)");
+    }
+
+    /**
+     * Sends captcha token
+     */
+    public static void executeCaptchaToken(String token) {
+        String tokenScript = String.format("$(\"#g-recaptcha-response\").val(\"%s\");", token);
+        executeJsCommand(tokenScript);
+    }
+
+    /**
+     * Execute post form
+     */
+    public static void sendPostForm() {
+        executeJsCommand("$(\"form\")[0].submit();");
+    }
+
+    private static void executeJsCommand(String command) {
         JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();
-        js.executeScript("window.scrollTo(0, 0)");
+        js.executeScript(command);
     }
 }

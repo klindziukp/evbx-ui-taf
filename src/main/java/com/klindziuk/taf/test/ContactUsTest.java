@@ -1,6 +1,6 @@
 package com.klindziuk.taf.test;
 
-import com.klindziuk.taf.common.annotation.SkipOnProduction;
+import com.klindziuk.taf.common.annotation.SkipOnCI;
 import com.klindziuk.taf.common.config.Group;
 import com.klindziuk.taf.common.constant.TimeConstant;
 import com.klindziuk.taf.common.log.Info;
@@ -12,7 +12,7 @@ import com.klindziuk.taf.po.page.MainPage;
 import com.klindziuk.taf.po.page.about.SupportPage;
 import com.klindziuk.taf.po.page.about.ThanksAMillionPage;
 import io.qameta.allure.Feature;
-import io.qameta.allure.Issue;
+import io.qameta.allure.Flaky;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.testng.Assert;
@@ -39,8 +39,8 @@ public class ContactUsTest extends BaseTest {
     @Test(groups = { Group.SMOKE })
     @Feature("Contact Us")
     @Severity(SeverityLevel.CRITICAL)
-    @SkipOnProduction(reason = "Unable to pass 'reCaptcha' on production")
-    @Issue("JS issue for 'standalone-chrome:3.141.59-zinc' container")
+    @Flaky
+    @SkipOnCI(reason = "Unable to execute JS for 'standalone-chrome:3.141.59-zinc' container")
     public void contactUsTest() {
 
         Info.step("Open Home page");

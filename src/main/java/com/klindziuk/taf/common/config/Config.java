@@ -29,4 +29,7 @@ public class Config {
 
     @JsonProperty("iePath")
     private String iePath;
+
+    @JsonProperty("captcha")
+    private Captcha captcha;
 }

@@ -13,4 +13,5 @@ public final class TimeConstant {
     public static final int SECONDS_15 = 15;
     public static final int SECONDS_20 = 20;
     public static final int SECONDS_30 = 30;
+    public static final int SECONDS_45 = 45;
 }
