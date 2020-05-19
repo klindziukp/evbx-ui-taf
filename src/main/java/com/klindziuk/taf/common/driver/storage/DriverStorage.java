@@ -14,6 +14,9 @@ import org.openqa.selenium.safari.SafariDriver;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+/**
+ * Storage for Driver
+ */
 public final class DriverStorage {
 
     private static final String USER_DIR = System.getProperty("user.dir");

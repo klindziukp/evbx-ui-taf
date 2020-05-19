@@ -6,7 +6,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 /**
  * Storage for options
  */
-public final class OptionStorage {
+final class OptionStorage {
 
     private OptionStorage() {
     }
@@ -16,7 +16,7 @@ public final class OptionStorage {
      *
      * @return Chrome options
      */
-    public static ChromeOptions getChromeOptions() {
+    static ChromeOptions getChromeOptions() {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--disable-notifications");
         chromeOptions.addArguments("--disable-infobars");
@@ -32,7 +32,7 @@ public final class OptionStorage {
      *
      * @return FireFox options
      */
-    public static FirefoxOptions getFireFoxOptions() {
+    static FirefoxOptions getFireFoxOptions() {
         FirefoxOptions firefoxOptions = new FirefoxOptions();
         firefoxOptions.addArguments("--disable-notifications");
         firefoxOptions.addArguments("--disable-popup-blockings");

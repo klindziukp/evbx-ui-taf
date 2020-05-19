@@ -17,8 +17,6 @@ public final class DriverFactory {
 
     /**
      * Returns Web driver instance
-     *
-     * @return Web driver instance
      */
     public static WebDriver createWebDriverInstance() {
         return createWebDriver();

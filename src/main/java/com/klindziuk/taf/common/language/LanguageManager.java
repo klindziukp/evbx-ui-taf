@@ -10,17 +10,28 @@ public final class LanguageManager {
     private LanguageManager() {
     }
 
-    private static ThreadLocal<Language> threadLocalWebDriver = ThreadLocal.withInitial(() -> Language.INTERNATIONAL);
+    private static ThreadLocal<Language> threadLocalLanguage = ThreadLocal.withInitial(() -> Language.INTERNATIONAL);
 
+    /**
+     * Returns appropriate language for current instance of Driver
+     */
     public static Language getLanguage() {
-        return threadLocalWebDriver.get();
+        return threadLocalLanguage.get();
     }
 
+    /**
+     * Sets language for current instance of Driver
+     *
+     * @param language supported language
+     */
     public static void setLanguage(Language language) {
-        threadLocalWebDriver.set(language);
+        threadLocalLanguage.set(language);
     }
 
+    /**
+     * Removes language for current instance of Driver
+     */
     public static void removeLanguage() {
-        threadLocalWebDriver.remove();
+        threadLocalLanguage.remove();
     }
 }

@@ -4,7 +4,7 @@ import com.klindziuk.taf.common.util.StringUtil;
 import com.klindziuk.taf.common.util.YamlUtil;
 
 /**
- * Config storage
+ * Configuration storage
  */
 public final class ConfigStorage {
 

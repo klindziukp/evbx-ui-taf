@@ -2,6 +2,7 @@ package com.klindziuk.taf.common.listener;
 
 import com.klindziuk.taf.common.driver.DriverFactory;
 import com.klindziuk.taf.common.driver.DriverManager;
+import com.klindziuk.taf.common.language.LanguageManager;
 import com.klindziuk.taf.common.log.Info;
 import com.klindziuk.taf.common.util.AllureUtil;
 import org.openqa.selenium.WebDriver;
@@ -70,6 +71,7 @@ public class TestListener implements ITestListener {
             Info.info("Terminating webDriver with hashcode: " + webDriver.hashCode());
             webDriver.quit();
         }
+        LanguageManager.removeLanguage();
         DriverManager.removeWebDriver();
     }
 

@@ -6,15 +6,8 @@ import lombok.Data;
 @Data
 public class Captcha {
 
-    @JsonProperty("userKey")
-    private String userKey;
-
-    @JsonProperty("googleKey")
-    private String googleKey;
-
-    @JsonProperty("captchaUrlPattern")
-    private String captchaUrlPattern;
-
-    @JsonProperty("tokenUrlPattern")
-    private String tokenUrlPattern;
+    @JsonProperty("userKey")            private String userKey;
+    @JsonProperty("googleKey")          private String googleKey;
+    @JsonProperty("captchaUrlPattern")  private String captchaUrlPattern;
+    @JsonProperty("tokenUrlPattern")    private String tokenUrlPattern;
 }

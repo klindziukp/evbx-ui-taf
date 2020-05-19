@@ -3,6 +3,9 @@ package com.klindziuk.taf.common.constant;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
+/**
+ * Represents application environments
+ */
 @RequiredArgsConstructor
 public enum Env {
 

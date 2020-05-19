@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Marks test for skipping
+ * Marks test for skipping on CI
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
