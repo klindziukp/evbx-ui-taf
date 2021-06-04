@@ -11,7 +11,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <aspectj.version>1.8.10</aspectj.version>
-    <apache-client-version>4.5.10</apache-client-version>
+    <apache-client-version>4.5.13</apache-client-version>
     <allure-testng.version>2.13.1</allure-testng.version>
     <allure-commons.version>2.13.1</allure-commons.version>
     <allure-attachments.version>2.13.1</allure-attachments.version>
