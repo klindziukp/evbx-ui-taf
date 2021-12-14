@@ -17,7 +17,7 @@
     <allure-attachments.version>2.13.1</allure-attachments.version>
     <jackson.version>2.10.1</jackson.version>
     <lombok.version>1.18.10</lombok.version>
-    <log4j.version>2.12.1</log4j.version>
+    <log4j.version>2.16.0</log4j.version>
     <selenium.version>3.141.59</selenium.version>
     <testng.version>7.0.0</testng.version>
   </properties>
